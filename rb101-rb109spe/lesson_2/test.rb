@@ -1,11 +1,13 @@
-def name
-  "George"
+
+greet = 'Hey!'
+
+def replace(str, value)
+  loop do
+    str = value
+    break
+  end
+  return value
 end
 
-name = "Lisa"
-
-def display_name(name)
-  puts name
-end
-
-display_name(name)
+greet = replace(greet, 'Hello')
+puts greet
